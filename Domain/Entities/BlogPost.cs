@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Domain.Entities {
-    public class BlogPost {
+﻿namespace Domain.Entities
+{
+    public class BlogPost 
+    {
         public Guid Id { get; set; }
         public string Title { get; set; }
         public string ShortDescription { get; set; }
@@ -15,7 +11,6 @@ namespace Domain.Entities {
         public DateTime PublishedDate { get; set; }
         public string Author { get; set; }
         public bool IsVisible { get; set; }
-
         public ICollection<Category> Categories { get; set; }
     }
 }
